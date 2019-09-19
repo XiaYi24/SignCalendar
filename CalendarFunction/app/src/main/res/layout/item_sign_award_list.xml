@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_a"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_bg"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@mipmap/icon_qt_sign_aa"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="+5"
+                    android:textColor="@color/white_one"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_qt_sign_cc"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_day_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#ffee7c"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="28dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/ll_a"
+            android:background="#ffa083" />
+    </RelativeLayout>
+
+
+</LinearLayout>

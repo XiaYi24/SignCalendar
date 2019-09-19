@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_record"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/event_date_active"
+        android:src="@null"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:text="11"
+        android:textColor="#333333"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/image_record_dot"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/image_record"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/icon_qt_sign_d" />
+
+</RelativeLayout>
